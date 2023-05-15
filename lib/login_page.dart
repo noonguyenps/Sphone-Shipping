@@ -99,10 +99,10 @@ class _LoginPageState extends State<LoginPage> {
           Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => ShippingScreen(shipping:value,secretKey:secretKey))),
-              setState(() {
-                showSpinner = false;
-              }),
-            })
+            }),
+            setState(() {
+              showSpinner = false;
+            }),
           },
         ),
       ),
